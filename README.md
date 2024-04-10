@@ -20,5 +20,9 @@ The overall flowchart is depicted below:
 
 4) **Local Rule Extraction from PSR/CSR**: run `Anchor_PSR.ipynb`, `Anchor_CSR.ipynb` for Anchors extraction, and `AnchorAnalysis_PSR.ipynb`, `AnchorAnalysis_CSR.ipynb`for their evaluation.
 
+# Citation and reference
 
+If you want to use our code for your experiments, please cite our paper.
+
+For further information, please contact us at: sara.narteni@ieiit.cnr.it, alberto.carlevaro@ieiit.cnr.it
 
