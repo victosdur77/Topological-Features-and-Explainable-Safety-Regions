@@ -4,9 +4,10 @@ This repository contains data and code associated to the paper _Narteni S., Carl
 
 The paper deals with simulated social robotics navigation problem that involves a fleet of mobile agents moving in a Cross scenario, governed by a human-
 like behavior. With the purpose of avoiding collisions among them, we show how safe and explainable AI (XAI) methods can constitute useful tools to tailor the parameters of the behavior towards a safe, collision-free, navigation. 
+
 The overall flowchart is depicted below:
 
-<img width="500" alt="Schermata 2024-04-10 alle 14 24 38" src="https://github.com/saranrt95/ExplainableSafetyRegions/assets/77918497/9aaa91ab-9a29-4844-98c2-a4c3ca395628">
+<img width="600" alt="Schermata 2024-04-10 alle 14 24 38" src="https://github.com/saranrt95/ExplainableSafetyRegions/assets/77918497/9aaa91ab-9a29-4844-98c2-a4c3ca395628">
 
 
 # Usage
