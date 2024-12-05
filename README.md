@@ -5,18 +5,18 @@ This repository contains data and experiments associated to the paper Toscano-Du
 The paper deals with simulated social robotics navigation problem that involves a fleet of mobile agents moving in a Cross scenario, governed by a human-
 like behavior. With the purpose of avoiding negative events, as collisions or deadlocks, we show how to topological features can improve the accuracy and effectiveness of safe and explainable AI (XAI) methods being an useful tool to know and adjust whether a simulation will be safe or not (free of collisions and deadlocks).
 
-# Usage
-
+# Repository structure
 - ExpReproduccionSara: Reproduce the experiments of https://doi.org/10.1007/978-3-031-63803-9_22 in order to know how to calculate safety regions.
 
-- ExpTopologicalCollision: Reproduce experiments for avoid collisions, using safety regions and topological features.
+- ExpTopologicalCollision: Experiments for avoid collisions, using safety regions and topological features.
 
-- ExpTopologicalDeadlock: Reproduce experiments for avoid deadlocks, using safety regions and topological features.
+- ExpTopologicalDeadlock: Experiments for avoid deadlocks, using safety regions and topological features.
 
-- ExpTopologicalSafeNavigation: Reproduce experiments for avoid both collisions and deadlocks, using safety regions and topological features.
+- ExpTopologicalSafeNavigation: Experiments for avoid both collisions and deadlocks, using safety regions and topological features.
 
 - ExpTopologicalAdvanced: Extension experiments using more topological features for build safety regions (not included in the paper).
 
+# Usage
 1) **Simulation and dataset collection (including simulations and topological features)**: run the `getdataset_TopologicalFeatures.py` script with the YAML settings contained in `configTopological.yaml` file. Dataset used in further experiments.
 
 2) **Native rule generation**: run `SkopeRules.ipynb` for training skope-rules model, and `NativeXAI_performance.ipynb` for its evaluation.
