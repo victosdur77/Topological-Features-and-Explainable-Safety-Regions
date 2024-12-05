@@ -1,22 +1,27 @@
 # ExplainableSafetyRegions
 
-This repository contains data and code associated to the paper _Narteni S., Carlevaro A., Guzzi J., Mongelli M. (2024) "Ensuring Safe Social Navigation via Explainable Probabilistic and Conformal Safety Regions". The 2nd World Conference on Explainable Artificial Intelligence (xAI-2024). La Valletta (Malta),17-19 July 2024._
+This repository contains data and experiments associated to the paper Toscano-Durán, V. Gonzalez-Diaz, R. Narteni, S. Mongelli, M. (2025) "Safe Social Navigation through Explainable Safety Regions Based on Topological Features". Submited to The 3rd World Conference on eXplainable Artificial Intelligence (XAI-2025).
 
 The paper deals with simulated social robotics navigation problem that involves a fleet of mobile agents moving in a Cross scenario, governed by a human-
-like behavior. With the purpose of avoiding collisions among them, we show how safe and explainable AI (XAI) methods can constitute useful tools to tailor the parameters of the behavior towards a safe, collision-free, navigation. 
-
-The overall flowchart is depicted below:
-
-<img width="600" alt="Schermata 2024-04-10 alle 14 24 38" src="https://github.com/saranrt95/ExplainableSafetyRegions/assets/77918497/9aaa91ab-9a29-4844-98c2-a4c3ca395628">
-
+like behavior. With the purpose of avoiding negative events, as collisions or deadlocks, we show how to topological features can improve the accuracy and effectiveness of safe and explainable AI (XAI) methods being an useful tool to know and adjust whether a simulation will be safe or not (free of collisions and deadlocks).
 
 # Usage
 
-1) **Simulation and dataset collection**: run the `getdataset.py` script with the YAML settings contained in `config.yaml` file. Dataset used in 
+- ExpReproduccionSara: Reproduce the experiments of https://doi.org/10.1007/978-3-031-63803-9_22 in order to know how to calculate safety regions.
 
-2) **Native rule generation**: run `SkopeRules.ipynb` for training skope-rules model, and `NativeXAI_performance.ipynb` for its evaluation (along with evaluation of Logic Learning Machine model, which is trained within Rulex platform).
+- ExpTopologicalCollision: Reproduce experiments for avoid collisions, using safety regions and topological features.
 
-3) **Scalable Classifiers for Probabilistic/Conformal safety regions**: run `ConfidenceRegions_SVM.ipynb`
+- ExpTopologicalDeadlock: Reproduce experiments for avoid deadlocks, using safety regions and topological features.
+
+- ExpTopologicalSafeNavigation: Reproduce experiments for avoid both collisions and deadlocks, using safety regions and topological features.
+
+- ExpTopologicalAdvanced: Extension experiments using more topological features for build safety regions (not included in the paper).
+
+1) **Simulation and dataset collection (including simulations and topological features)**: run the `getdataset_TopologicalFeatures.py` script with the YAML settings contained in `configTopological.yaml` file. Dataset used in further experiments.
+
+2) **Native rule generation**: run `SkopeRules.ipynb` for training skope-rules model, and `NativeXAI_performance.ipynb` for its evaluation.
+
+3) **Scalable Classifiers for Probabilistic/Conformal safety regions**: run `ConfidenceRegions_SVM.ipynb`.
 
 4) **Local Rule Extraction from PSR/CSR**: run `Anchor_PSR.ipynb`, `Anchor_CSR.ipynb` for Anchors extraction, and `AnchorAnalysis_PSR.ipynb`, `AnchorAnalysis_CSR.ipynb`for their evaluation.
 
@@ -24,5 +29,5 @@ The overall flowchart is depicted below:
 
 If you want to use our code for your experiments, please cite our paper.
 
-For further information, please contact us at: sara.narteni@ieiit.cnr.it, alberto.carlevaro@ieiit.cnr.it
+For further information, please contact us at: vtoscano@us.es, sara.narteni@cnr.it
 
