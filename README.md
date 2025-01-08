@@ -17,13 +17,22 @@ like behavior. With the purpose of avoiding negative events, as collisions or de
 - ExpTopologicalAdvanced: Extension experiments using more topological features for build safety regions (not included in the paper).
 
 # Usage
-1) **Simulation and dataset collection (including simulations and topological features)**: run the `getdataset_TopologicalFeatures.py` script with the YAML settings contained in `configTopological.yaml` file. Dataset used in further experiments.
 
-2) **Native rule generation**: run `SkopeRules.ipynb` for training skope-rules model, and `NativeXAI_performance.ipynb` for its evaluation.
+1) Clone this repository and create a virtual enviromment:
+```bash
+python3 -m venv entorno python=3.11
+```
+2) Install the necessary dependencies: pip install jupyter notebook
+```bash
+pip install navground[all] pandas==2.2.3 seaborn==0.13.2 scikit-learn==1.3.0 skope-rules==1.0.1 numpy==1.25.1 qpsolvers[open_source_solvers] cvxopt anchor-exp
+```
+3) **Simulation and dataset collection (including simulations and topological features)**: run the `getdataset_TopologicalFeatures.py` script with the YAML settings contained in `configTopological.yaml` file. Dataset used in further experiments.
 
-3) **Scalable Classifiers for Probabilistic/Conformal safety regions**: run `ConfidenceRegions_SVM.ipynb`.
+4) **Native rule generation**: run `SkopeRules.ipynb` for training skope-rules model, and `NativeXAI_performance.ipynb` for its evaluation.
 
-4) **Local Rule Extraction from PSR/CSR**: run `Anchor_PSR.ipynb`, `Anchor_CSR.ipynb` for Anchors extraction, and `AnchorAnalysis_PSR.ipynb`, `AnchorAnalysis_CSR.ipynb`for their evaluation.
+5) **Scalable Classifiers for Probabilistic/Conformal safety regions**: run `ConfidenceRegions_SVM.ipynb`.
+
+6) **Local Rule Extraction from PSR/CSR**: run `Anchor_PSR.ipynb`, `Anchor_CSR.ipynb` for Anchors extraction, and `AnchorAnalysis_PSR.ipynb`, `AnchorAnalysis_CSR.ipynb`for their evaluation.
 
 # Citation and reference
 
