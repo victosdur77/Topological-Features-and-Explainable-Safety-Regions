@@ -1,4 +1,4 @@
-# ExplainableSafetyRegions
+# Topological Features and Explainable Safety Regions
 
 This repository contains data and experiments associated to the paper Toscano-Durán, V. Gonzalez-Diaz, R. Narteni, S. Mongelli, M. (2025) "Safe Social Navigation through Explainable Safety Regions Based on Topological Features". Submited to The 3rd World Conference on eXplainable Artificial Intelligence (XAI-2025).
 
